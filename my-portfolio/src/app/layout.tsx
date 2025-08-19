@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Children } from "react";
 
 
 export default function RootLayout({children} : {children:React.ReactNode}) {
@@ -14,7 +13,7 @@ export default function RootLayout({children} : {children:React.ReactNode}) {
             <Link href="/about" className="text-sm font-semibold hover:text-blue-600">
               About | 
             </Link>
-            <Link href="projects" className="text-sm font-semibold hover:text-blue-600">
+            <Link href="/projects" className="text-sm font-semibold hover:text-blue-600">
               Projects
             </Link>
           </nav>
