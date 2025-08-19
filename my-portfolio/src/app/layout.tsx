@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Navbar from "./components/navbar";
 
 
 export default function RootLayout({children} : {children:React.ReactNode}) {
@@ -6,17 +7,7 @@ export default function RootLayout({children} : {children:React.ReactNode}) {
     <html lang="ko">
       <body>
         <header className="sticky top-0 z-50 border-b border-gray-200 bg-white">
-          <nav className="mx-auto flex max-w-5xl items-center gap-6 px-4 py-3">
-            <Link href="/" className="text-sm font-semibold hover:text-blue-600">
-              Home | 
-            </Link>
-            <Link href="/about" className="text-sm font-semibold hover:text-blue-600">
-              About | 
-            </Link>
-            <Link href="/projects" className="text-sm font-semibold hover:text-blue-600">
-              Projects
-            </Link>
-          </nav>
+          <Navbar/>
         </header>
 
         {/* 메인 */}
