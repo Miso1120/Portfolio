@@ -12,7 +12,7 @@ export default function RootLayout({children} : {children:React.ReactNode}) {
 
         {/* 메인 */}
         <main className="mx-auto max-w-5xl px-4 py-10">{children}</main>
-
+        
         {/* 푸터 */}
         <footer className="mx-auto max-w-5xl px-4 py-6 text-sm text-gray-500">
           © {new Date().getFullYear()} Shingseong-gyu
